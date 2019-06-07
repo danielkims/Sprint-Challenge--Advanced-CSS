@@ -9,24 +9,39 @@
 .nav-container {
   height: 100%;
   align-items: center;
+
+  @media @phone {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+  }
 }
 
 .nav {
+  text-align: center;
   width: auto;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
+
+  @media @phone {
+    width: 100%;
+    justify-content: space-around;
+  }
 
 }
 
 .Logo-center {
-  margin-left: 32%;
+  display: flex;
+  justify-content: center;
   font-size: 4rem;
   padding-top: 7px;
   padding-bottom: 16px;
 }
 
 a {
-  margin-left: 10.2%;
+  display: flex;
   font-size: 1.8rem;
   color: @header-font-color;
   text-decoration: none;
