@@ -66,6 +66,11 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      display: flex;
+      flex-direction: column;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -75,6 +80,12 @@
 
       p {
         margin-bottom: 26px;
+
+        @media @phone {
+          display: flex;
+          flex-direction: column;
+        }
+
       }
 
       .btn {.button-creator(100px, 35px, @btn-bg-color, white, 2rem);
