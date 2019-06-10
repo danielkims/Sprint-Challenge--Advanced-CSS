@@ -1,1 +1,24 @@
 // Mixins Here
+.center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.button-creator(@width, @height, @btn-bg-color, @main-font-color, @font-size) {
+  .border-radius(7px);
+  .center;
+  width: @width;
+  height: @height;
+  background-color: @btn-bg-color;
+  color: @main-font-color;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: @font-size;
+}
